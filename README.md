@@ -1,7 +1,8 @@
-<<<<<<< HEAD
 # Joa_Front_End
+
+리드미 테스트 합니다.
 React Front_End
-=======
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,4 +73,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> d84f385221649bcb2de2d027b7a0267fe9c2a5bd
