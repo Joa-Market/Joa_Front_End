@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.logo {
+  display: flex;
+  background: url("../../assets/logo.png") no-repeat center;
+  background-size: cover;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+
+.text {
+}
