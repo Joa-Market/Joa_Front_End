@@ -5,6 +5,9 @@ import { useDispatch } from "react-redux";
 import { history } from "../../redux/configureStore";
 import { useForm } from "react-hook-form";
 
+//css
+import "./login.modules.css";
+
 const Login = () => {
   const {
     register,

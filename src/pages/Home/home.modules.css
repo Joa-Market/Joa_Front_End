@@ -1,0 +1,13 @@
+.home__add__post {
+  position: fixed;
+  bottom: 13%;
+  right: 10%;
+  color: #ffbeb3;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  font-size: 80px;
+}
+
+.home__add__post:hover {
+  color: #ef5c89;
+}

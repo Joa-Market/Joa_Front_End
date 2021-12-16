@@ -1,6 +1,7 @@
 import React from "react";
+import "./chat.modules.css";
 
-const Chat = () => {
+const Chat = props => {
   return (
     <React.Fragment>
       <div>Chat</div>

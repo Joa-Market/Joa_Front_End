@@ -1,6 +1,7 @@
 import React from "react";
+import "./header.modules.css";
 
-const Header = () => {
+const Header = props => {
   return (
     <>
       <div className="container"></div>
