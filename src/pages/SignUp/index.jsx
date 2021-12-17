@@ -42,7 +42,7 @@ const SignUp = () => {
               },
             })}
           />
-          {errors && <p>{errors.email?.message}</p>}
+          {errors && <p className="signup__error">{errors.email?.message}</p>}
         </div>
         <div className="input__wrapper">
           <label className="label">닉네임</label>
@@ -56,8 +56,8 @@ const SignUp = () => {
                 message: "닉네임을 입력해주세요.",
               },
               minLength: {
-                value: 3,
-                message: "최소 3자 이상의 닉네임을 입력해주세요.",
+                value: 2,
+                message: "최소 2자 이상의 닉네임을 입력해주세요.",
               },
               maxLength: {
                 value: 8,
@@ -69,7 +69,9 @@ const SignUp = () => {
               },
             })}
           />
-          {errors && <p>{errors.nickname?.message}</p>}
+          {errors && (
+            <p className="signup__error">{errors.nickname?.message}</p>
+          )}
         </div>
         <div className="input__wrapper">
           <label className="label">비밀번호</label>
@@ -93,7 +95,9 @@ const SignUp = () => {
               },
             })}
           />
-          {errors.password && <p>{errors.password.message}</p>}
+          {errors.password && (
+            <p className="signup__error">{errors.password.message}</p>
+          )}
         </div>
         <div className="input__wrapper">
           <label className="label">비밀번호 확인</label>
@@ -112,10 +116,16 @@ const SignUp = () => {
             })}
           />
           {errors.passwordConfirmation && (
-            <p>{errors.passwordConfirmation.message}</p>
+            <p className="signup__error">
+              {errors.passwordConfirmation.message}
+            </p>
           )}
         </div>
-        <button type="submit" onClick={handleSubmit(onSubmit)}>
+        <button
+          className="signup__button"
+          type="submit"
+          onClick={handleSubmit(onSubmit)}
+        >
           회원가입
         </button>
       </form>

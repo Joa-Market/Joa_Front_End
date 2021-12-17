@@ -1,10 +1,15 @@
-.addpost__wrapper {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app__wrapper {
   width: 360px;
   margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
-  .addpost__wrapper {
+  .app__wrapper {
     width: 100%;
   }
 }

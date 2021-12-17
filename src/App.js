@@ -5,6 +5,8 @@ import React from "react";
 import { ConnectedRouter } from "connected-react-router";
 import { Route, Switch } from "react-router-dom";
 import { history } from "./redux/configureStore";
+// css
+import "./App.modules.css";
 // components
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -22,18 +24,20 @@ function App() {
   return (
     <React.Fragment>
       <ConnectedRouter history={history}>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
-          <Route exact path="/signup" component={Signup}></Route>
-          <Route exact path="/login" component={Login}></Route>
-          <Route exact path="/loginstart" component={LoginStart}></Route>
-          <Route exact path="/addpost" component={AddPost}></Route>
-          <Route exact path="/postdetail" component={PostDetail}></Route>
-          <Route exact path="/profile/:id" component={Profile}></Route>
-          <Route exact path="/chat" component={Chat}></Route>
-        </Switch>
-        <Navbar />
+        <div className="app__wrapper">
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/signup" component={Signup}></Route>
+            <Route exact path="/login" component={Login}></Route>
+            <Route exact path="/loginstart" component={LoginStart}></Route>
+            <Route exact path="/addpost" component={AddPost}></Route>
+            <Route exact path="/postdetail" component={PostDetail}></Route>
+            <Route exact path="/profile/:id" component={Profile}></Route>
+            <Route exact path="/chat" component={Chat}></Route>
+          </Switch>
+          <Navbar />
+        </div>
       </ConnectedRouter>
     </React.Fragment>
   );

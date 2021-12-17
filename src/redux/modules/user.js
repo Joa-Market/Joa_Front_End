@@ -22,33 +22,33 @@ const initialState = {
 
 export const signUpAPI = _account => {
   return function (dispatch, getState, { history }) {
-    console.log(_account);
+    // console.log(_account);
     const account = {
       email: _account.email,
-      nickname: _account.nickname,
+      nickName: _account.nickname,
       password: _account.password,
     };
+    // apis
+    //   .checkEmail(account.email)
+    //   .then(res => {
+    //     console.log(res);
     apis
-      .checkEmail(account.email)
+      .registerUser(account)
       .then(res => {
-        // console.log(res);
-        apis
-          .registerUser(account)
-          .then(res => {
-            // console.log(res);
-            alert("회원가입이 완료되었습니다🎉");
-            history.push("/login");
-          })
-          .catch(err => {
-            // console.log(err.response);
-            alert(err.response.data.msg);
-            dispatch(setError(err.response.data.msg));
-          });
+        console.log(res);
+        alert("회원가입이 완료되었습니다🎉");
+        history.push("/login");
       })
       .catch(err => {
-        console.log(err.response);
-        dispatch(setError(err.response.data.msg));
+        console.log(err);
+        // alert(err.response.data.msg);
+        // dispatch(setError(err.response.data.msg));
       });
+    // })
+    // .catch(err => {
+    // console.log(err.response);
+    // dispatch(setError(err.response.data.msg));
+    // });
   };
 };
 
@@ -126,7 +126,7 @@ export default handleActions(
 const userActions = {
   signUpAPI,
   logInAPI,
-  logOutAPI,
+  // logOutAPI,
   getUserAPI,
 };
 

@@ -5,8 +5,8 @@
   align-items: center;
   padding: 20px;
   width: 360px;
-  margin: auto;
-  background-color: #ff9841;
+  margin: auto auto 75px auto;
+  background-color: #fcfcfc;
   box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 10px;
-  height: 290px;
+  height: 100px;
 }
 
 .label {
@@ -32,6 +32,35 @@
   border-radius: 0.5rem;
   border: 1px solid #dfdfdf;
   background-color: #fff;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+input::placeholder {
+  font-size: 13px;
+  color: #abb0b5;
+  font-weight: 600;
+}
+
+.signup__error {
+  font-size: 14px;
+  color: red;
+  margin-top: 0.5px;
+}
+
+.signup__button {
+  height: 50px;
+  width: 100%;
+  color: #39bae8;
+  font-weight: 600;
+  border: none;
+  background-color: #b9edf8;
+  border-radius: 5px;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+.signup__button:hover {
+  background-color: #39bae8;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {

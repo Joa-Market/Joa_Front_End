@@ -4,7 +4,7 @@ import "./header.modules.css";
 const Header = props => {
   return (
     <>
-      <div className="container"></div>
+      <div className="header__container"></div>
     </>
   );
 };

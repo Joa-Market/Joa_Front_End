@@ -1,9 +1,12 @@
 import React from "react";
-
+// css
+import "./postdetail.modules.css";
 const PostDetail = () => {
   return (
     <>
-      <div>PostDetail</div>
+      <div className="postdetail__wrapper">
+        <div>PostDetail</div>
+      </div>
     </>
   );
 };

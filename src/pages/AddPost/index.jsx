@@ -1,9 +1,14 @@
 import React from "react";
-
+// components
+import AddImg from "../../components/AddImg";
+// css
+import "./addpost.modules.css";
 const AddPost = () => {
   return (
     <>
-      <div>addpost</div>
+      <div className="addpost__wrapper">
+        <AddImg />
+      </div>
     </>
   );
 };
