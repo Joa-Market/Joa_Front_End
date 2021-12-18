@@ -51,3 +51,9 @@
 .login__button:hover {
   background-color: #39bae8;
 }
+
+.login__signup__button {
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
